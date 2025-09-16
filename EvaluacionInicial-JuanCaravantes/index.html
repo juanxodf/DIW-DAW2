@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demostración de Elementos HTML Básicos</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+
+<body>
+    <div>
+        <h1>Demostración de Elementos HTML Básicos</h1>
+        <p>Ejemplo con cabeceras, enlaces, listas, imágenes, tablas y formularios (select y textareaincluidos).</p>
+        <section class="indice">
+            <h3><a href="#Cabeceras">Cabeceras</a></h3>
+            <h3><a href="#Enlaces">Enlaces</a></h3>
+            <h3><a href="#Listas">Listas</a></h3>
+            <h3><a href="#Imágenes">Imágenes</a></h3>
+            <h3><a href="#Tablas">Tablas</a></h3>
+            <h3><a href="#Formularios">Formularios</a></h3>
+        </section>
+    </div>
+    <div class="apartados">
+        <h2 class="azul" id="Cabeceras">Cabeceras</h2>
+        <h2>Título principal</h2>
+        <h2 class="azul">Subtítulo</h2>
+        <h3>Sección</h3>
+        <h4>Subsección</h4>
+        <h5>Detalle</h5>
+        <h6>Nota</h6>
+    </div>
+    <div class="apartados">
+        <h2 class="azul" id="Enlaces">Enlaces</h2>
+        <p>Enlace externo: <a href="https://developer.mozilla.org/es/">MDN Web Docs</a></p>
+        <p>Enlace interno: <a href="#Formularios">Ir al formulario</a></p>
+    </div>
+    <div class="apartados">
+        <h2 class="azul" id="Listas">Listas</h2>
+        <h3><b>Lista desordenada</b></h3>
+        <ul>
+            <li>
+                CPU
+            </li>
+            <li>
+                RAM
+            </li>
+            <li>
+                Placa base
+            </li>
+        </ul>
+        <h3><b>Lista ordenada</b></h3>
+        <ol>
+            <li>
+                Encender equipo
+            </li>
+            <li>
+                Iniciar sesión
+            </li>
+            <li>
+                Abrir un navegador
+            </li>
+            <h3><b>Lista de definiciones</b></h3>
+            <dl>
+                <dt>Hardware</dt>
+                <dd>Componentes físicos del equipo.</dd>
+            </dl>
+            <dl>
+                <dt>Software</dt>
+                <dd>Programas y aplicaciones.</dd>
+            </dl>
+            <dl>
+                <dt>Firmware</dt>
+                <dd>Software de bajo nivel embebido en dispositivos.</dd>
+            </dl>
+    </div>
+    <div class="apartados">
+        <h2 class="azul" id="Imágenes">Imágenes</h2>
+        <!-- Lo he buscado en chatGPT -->
+        <img src="https://picsum.photos/640/480" alt="Imagen aleatoria">
+    </div>
+    <!-- Todo lo previo esta hecho en clase -->
+    <!-- Lo he buscado en chatGPT la mayoria porque no me acordaba de la sintaxis de las etiquetas -->
+    <div class="apartados">
+        <h2 class="azul" id="Tablas">Tablas</h2>
+        <p>Tabla con especificaciones básicas:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Componente</th>
+                    <th>Ejemplo</th>
+                    <th>Notas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CPU</td>
+                    <td>4 núcleos</td>
+                    <td>Frecuencia variable</td>
+                </tr>
+                <tr>
+                    <td>RAM</td>
+                    <td>16 GB</td>
+                    <td>DDR4 o DDR5</td>
+                </tr>
+                <tr>
+                    <td>Almacenamiento</td>
+                    <td>512 GB SSD</td>
+                    <td>NVMe recomendado</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="apartados">
+        <h2 class="azul" id="Formularios">Formularios</h2>
+        <form action="#" method="post">
+            <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Tu nombre">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" placeholder="ejemplo@correo.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edad">Edad</label>
+                        <input type="number" id="edad" placeholder="Edad">
+                    </div>
+                </div>
+
+            <div>
+                <label for="cargo">Cargo de lista de opciones</label>
+                <select id="cargo" name="cargo">
+                    <option value="">– Selecciona –</option>
+                    <option value="administrador">Administrador</option>
+                    <option value="usuario">Usuario</option>
+                    <option value="invitado">Invitado</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="comentario">Texto / Comentario (textarea)</label>
+                 <!-- No lo he usado en la vida -->
+                <textarea id="comentario" name="comentario" rows="4" placeholder="Escribe tu comentario..."></textarea>
+            </div>
+            <!-- No lo he usado en la vida -->
+            <fieldset>
+                <!-- No lo he usado en la vida -->
+                <legend>Tipo de equipo</legend>
+                <input type="radio" id="sobremesa" name="tipo_equipo" value="sobremesa">
+                <label for="sobremesa">Sobremesa</label><br>
+
+                <input type="radio" id="portatil" name="tipo_equipo" value="portatil">
+                <label for="portatil">Portátil</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Accesorios</legend>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="raton" name="accesorios" value="raton">
+                    <label for="raton">Ratón</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="teclado" name="accesorios" value="teclado">
+                    <label for="teclado">Teclado</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="cascos" name="accesorios" value="cascos">
+                    <label for="cascos">Cascos</label>
+                </div>
+            </fieldset>
+
+            <div class="botones">
+                <div class="boton"><input type="submit" value="Enviar"></div>
+                <div class="boton"><input type="reset" value="Limpiar"></div>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        Ejemplo educativo — Fundamentos de Hardware
+    </footer>
+</body>
+
+</html>
