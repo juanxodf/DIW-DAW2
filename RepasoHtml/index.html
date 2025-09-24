@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- El atributo lang="es" indica que el idioma principal de la página es español -->
+
+
+<head>
+    <!-- Contiene información para el navegador y buscadores (metada-tos, estilos, scripts, etc.) -->
+
+    <meta charset="UTF-8">
+    <!-- Codificación de caracteres (UTF-8 soporta acentos, ñ y símbo-los) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que el diseño sea responsivo en móviles -->
+    <!-- width=device-width -> el ancho se adapta al dispositivo -->
+    <!-- initial-scale=1.0 -> nivel de zoom inicial -->
+
+    <title>Ejemplo completo de HEAD</title>
+    <!-- Título de la pestaña del navegador -->
+
+    <meta name="description" content="Página de ejemplo con todas las etiquetas posibles en el head.">
+    <!-- Breve descripción de la página, importante para SEO -->
+
+    <meta name="keywords" content="HTML, head, meta, ejemplo, tuto-rial">
+    <!-- Palabras clave para buscadores (hoy en día poco usadas por Google) -->
+
+    <meta name="author" content="Tu Nombre">
+    <!-- Autor del documento -->
+
+    <base href="https://www.ejemplo.com/">
+    <!-- Establece una URL base para todos los enlaces relativos de la página -->
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Enlaza una hoja de estilos externa -->
+
+    <style>
+        /* Estilos internos (se recomienda usar .css externo, pero puede ir aquí) */
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Ícono que aparece en la pestaña del navegador -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Mejora la carga de recursos externos conectando anticipada-mente -->
+
+    <link rel="dns-prefetch" href="//example.com">
+    <!-- Sugerencia al navegador para resolver DNS de un dominio antes de que se use -->
+
+    <link rel="manifest" href="site.webmanifest">
+    <!-- Archivo JSON con configuración de la app web (para PWA) -->
+
+    <meta name="theme-color" content="#317EFB">
+    <!-- Color de la barra del navegador en móviles -->
+
+    <script src="script.js" defer></script>
+    <!-- Enlaza un archivo JS -->
+    <!-- defer -> ejecuta el script después de cargar el HTML -->
+    <!-- async -> ejecuta el script en paralelo (menos usado en scripts que dependen del DOM) -->
+
+    <noscript>
+        <!-- Contenido alternativo si el usuario tiene deshabilitado JavaScript -->
+        Tu navegador no soporta JavaScript o está desactivado.
+    </noscript>
+
+</head>
+
+<body>
+    <!-- Contiene todo el contenido visible de la página -->
+    <h1>Ejemplo de HEAD completo</h1>
+    <p>Aquí iría el contenido visible.</p>
+</body>
+</html>
