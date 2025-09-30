@@ -1,0 +1,27 @@
+p.p1 {
+    color: red;
+}
+p.p2{
+    color: blue;
+}
+
+p[class]{
+    text-transform: uppercase;
+}
+
+p[class = p1]{
+    border: 2px solid black;
+}
+
+a[title~="externo"]{    /* contiene en el titulo la palabra externo */
+    color: blueviolet;
+    font-weight: bold;
+}
+
+a[href^="https"]{   /*comienza por https */
+    color: chocolate;
+}
+
+img{
+    border: 2px solid black;
+}

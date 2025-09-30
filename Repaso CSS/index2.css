@@ -1,0 +1,11 @@
+div{
+    border: 2px solid black;
+}
+
+div p{
+    color: red;
+}
+
+div>p{
+    color: blue;
+}
