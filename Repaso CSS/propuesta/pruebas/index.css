@@ -1,0 +1,40 @@
+/* Al pasar el ratón por los enlaces lo ponga color rojo y subrayado */
+a:hover{
+    color: red;
+    text-decoration: underline;
+}
+/** Al hacer clic en un enlace se ponga en color naranja */
+a:active{
+    color: orange;
+}
+/* El primer párrafo del primer div background amarillo */
+div + p{
+    background-color: yellow;
+}
+/*El último párrafo de la página en color azul */
+p:last-child{
+    color: blue;
+}
+/* El segundo párrafo en negrita */
+p:nth-child(2){
+    font-weight: bold;
+}
+/*La primera letra de cada párrafo en un tamaño mayor */
+p::first-letter{
+    font-size: 2em;
+}
+/*La primera línea de cada párrafo en mayúsculas */
+p::first-line{
+    text-transform: uppercase;
+}
+/*Antes y despues del H1 poner una flecha */
+h1::before{
+    content:"<--"
+}
+h1::after{
+    content:"-->"
+}
+/*Al seleccionar un párrafo cambien el color de fondo a verde */
+p::selection{
+    background-color: green;
+}

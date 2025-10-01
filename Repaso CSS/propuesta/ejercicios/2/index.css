@@ -1,0 +1,37 @@
+/* Tenemos que cuando pasemos el cursor por encima de una de las filas 
+de la tabla se subraye de amarillo (#FFFF66) */
+tr:hover td{
+    background-color:#FFFF66;
+}
+
+table{
+    border: 1px solid
+}
+th{
+    width: 200px;
+}
+
+th, td{
+    border: 2px grey solid;
+}
+
+tr:first-child{
+    background-color: rgb(178, 177, 177);
+}
+
+th.euro{
+    background: url("imgs/euro.svg") no-repeat;
+    background-color: rgb(224, 244, 251);
+}
+th.dolar{
+    background: url("imgs/dolar.svg") no-repeat;
+    background-color: rgb(224, 244, 251);
+}
+th.yen{
+    background: url("imgs/yen.svg") no-repeat;
+    background-color: rgb(224, 244, 251);
+}
+th.libra{
+    background: url("imgs/libra.svg") no-repeat;
+    background-color: rgb(224, 244, 251);
+}
