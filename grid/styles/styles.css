@@ -1,0 +1,63 @@
+/*
+    EJEMPLO 1
+
+
+.grid-container{
+    display: grid;
+    grid-template-rows: 100px 250px 100px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.uno{
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.dos{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.tres{
+    background-color: green;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.cuatro{
+    background-color: yellow;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+*/
+
+/* 
+    EJEMPLO 2
+*/
+
+.grid-container{
+    display: grid;
+    grid-template-rows: 100px 250px 100px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "header header" 
+                         "nav main" 
+                         "footer footer"
+}
+
+.uno{
+    background-color: red;
+    grid-area: header;
+}
+.dos{
+    background-color: blue;
+    grid-area: nav;
+}
+.tres{
+    background-color: green;
+    grid-area: main;
+}
+
+.cuatro{
+    background-color: yellow;
+    grid-area: footer;
+}   

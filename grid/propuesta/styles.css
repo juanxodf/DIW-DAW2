@@ -1,0 +1,48 @@
+.container {
+    display: grid;
+    grid-template-areas: "blank menu menu"
+                        "sidebar menu menu"
+                        "sidebar extra extra"
+                        "image image posts"
+                        "footer footer footer";
+    grid-gap: 10px;
+    padding: 10px;
+    min-height: 600px;
+    max-width: 600px;
+
+}
+
+.item1 {
+    grid-area: blank;
+    background-color: rgba(181, 137, 199, 0.61);
+}
+
+.item2 {
+    grid-area: menu;
+    background-color: rgba(227, 245, 124, 0.61);
+}
+
+.item3 {
+    grid-area: sidebar;
+    background-color: rgba(122, 248, 149, 0.61);
+}
+
+.item4 {
+    grid-area: extra;
+    background-color: rgb(110, 107, 107);
+}
+
+.item5 {
+    grid-area: image;
+    background-color: rgba(46, 122, 26, 0.61);
+}
+
+.item6 {
+    grid-area: posts;
+    background-color: rgba(247, 68, 202, 0.61);
+}
+
+.item7 {
+    grid-area: footer;
+    background-color: rgba(241, 138, 48, 0.61);
+}
