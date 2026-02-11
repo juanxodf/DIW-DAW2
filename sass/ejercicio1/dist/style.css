@@ -1,0 +1,22 @@
+body {
+  background-color: #3498db;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  color: #9444f5;
+}
+h1:hover {
+  color: white;
+}
+
+div__ejemplo1 {
+  background-color: white;
+}
+div__ejemplo2 {
+  background-color: green;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+$primary-color: #3498db;
+$secondary-color: #9444f5;
+$tamaño-fuente: 16px;
+$espaciado: 20px;
+
+body{
+    background-color: $primary-color;
+    font-size: $tamaño-fuente;
+    font-family: Arial, sans-serif;
+    padding: $espaciado;
+}
+
+h1{
+    color: $secondary-color;
+    &:hover{
+        color: white;
+    }
+}
+
+div{
+    &__ejemplo1{
+        background-color: white;
+    }
+
+    &__ejemplo2{
+        background-color: green;
+    }
+}
