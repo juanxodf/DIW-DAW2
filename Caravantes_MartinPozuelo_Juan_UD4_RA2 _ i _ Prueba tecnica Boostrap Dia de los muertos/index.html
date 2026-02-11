@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success mb-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">Día de los muertos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#faq" class="nav-link">FAQ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Más
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#historia">Historia</a></li>
+                            <li><a class="dropdown-item" href="#tradiciones">Tradiciones</a></li>
+                            <li><a class="dropdown-item" href="#galeria">Galería</a></li>
+                            <hr>
+                            <li><a class="dropdown-item" href="#eventos">Eventos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Barra de búsqueda -->
+    <div class="input-group mb-3">
+        <input class="form-control" type="text" placeholder="Buscar">
+        <button class="btn btn-outline-light bg-primary" type="button"><i class="bi bi-search"></i> </button>
+    </div>
+
+    <!-- Sección “Tradición cultural en México” -->
+    <div class="conatiner my-4 bg-warning d-flex">
+        <div class="flex-colum order-1">
+            <img src="./img/pattern-2.png" alt="banderillas" class="img-fluid w-75">
+            <h1 class="text-uppercase text-success d-lg-block d-none ">Tradición cultural en México</h1>
+        </div>
+        <img src="./img/showcase.png" alt="cabeza-muerto" class="order-2 img-fluid w-25">
+    </div>
+
+    <!-- Sección “Tradición-Cultura-México” -->
+    <div class="container my-4 d-flex">
+
+            <div class="col-lg-4 col-12 order-sm-1">
+                <div class="card h-100 shadow-sm border-success border-3">
+                    <img src="./img/about-1.jpg" class="card-img-top" alt="Curso HTML">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title mb-0">Tradición</h5>
+        
+                        </div>
+                        <p class="card-text">Celebrar la muerte para honrar la vida</p>
+                        <p class="card-text opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum molestiae alias perspiciatis atque autem. Iste nihil corrupti illum in, et tenetur similique reiciendis porro illo eius dolores totam alias facere?</p>
+
+                        <a href="#">Mas Información</a>
+                        
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-lg-4 col-12 order-sm-3">
+                <div class="card h-100 shadow-sm border-primary border-3">
+                    <img src="./img/about-3.jpg" class="card-img-top" alt="Curso CSS">
+                    <div class="card-body">
+                        <h5 class="card-title">Cultura</h5>
+                        <div class=" gap-2 align-items-center">
+                            <p class="card-text">Altares, flores y memoria </p>
+                        <p class="card-text opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum molestiae alias perspiciatis atque autem. Iste nihil corrupti illum in, et tenetur similique reiciendis porro illo eius dolores totam alias facere?</p>
+
+                        <a href="#">Mas Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-12 order-sm-2">
+                <div class="card h-100 shadow-sm border-black border-opacity-50 border-3">
+                    <img src="./img/about-2.jpg" class="card-img-top" alt="Bootstrap">
+                    <div class="card-body bg-warning">
+                        <h5>México</h5>
+                        <p class="card-text">Origen, significado y celebración </p>
+                        <p class="card-text opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum molestiae alias perspiciatis atque autem. Iste nihil corrupti illum in, et tenetur similique reiciendis porro illo eius dolores totam alias facere?</p>
+                        <a href="#">Mas Información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección “importancia cultural…” -->
+    <div class="border border-success border-5 d-flex">
+        <img src="./img/showcase.png" alt="calavera" class="w-25">
+        <div class="flex-colum">
+            <h1 class="text-warning">Importancia cultural del Día de los Muertos en la identidad mexicana</h1>
+            <h2 class="opacity-75">¿ Quieres saber más ?</h2>
+
+            <!-- Acordeon sacado de la documentación de bootstrap -->
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-success" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            El simbolismo del altar de muertos y su significado cultural
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim beatae odio voluptatem id natus. Consequatur necessitatibus repudiandae obcaecati sit, impedit hic nihil, voluptatibus eligendi reiciendis nesciunt doloremque fuga est facilis!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-warning" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Como se vive el Día de los Muertos hoy en México 
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet ratione, illo quis molestiae nulla fuga libero placeat voluptatem excepturi repellat inventore nesciunt repellendus sequi, natus repudiandae! Explicabo beatae incidunt odio!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-danger" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Raíces indígenas y herencia cultural del Día de los Muertos 
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quod fugit et esse perferendis quae quos officiis voluptas unde? Velit, adipisci nihil atque pariatur dicta repellat ad. Nisi, delectus non!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección “información resumida” -->
+    <div class="container py-4 table-responsive">
+        <table class="table table-primary table-striped table-hover table-bordered">
+            <thead>
+                <th>Dato</th>
+                <th>Descripción</th>
+                <th>Significado cultural</th>
+            </thead>
+            <tbody>
+
+                <tr class="opacity-100">
+                    <td>Fecha celebración</td>
+                    <td>1 y 2 de Noviembre</td>
+                    <td>Días dedicados a recordar a los difuntos</td>
+                </tr>
+
+                <tr>
+                    <td>Calaveras de azúcar</td>
+                    <td>Dulces con nombres de personas</td>
+                    <td>Recordatorio de la muerte con alegría</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Sección “Que no te espanten los esqueletos” -->
+    <button class="btn btn-primary w-100 rounded-5 mb-4 " data-bs-toggle="modal" data-bs-target="#modalInfo">Que no te espanten los esqueletos</button>
+
+    <!-- Vas a tener que hacer click fuera para cerrar el modal -->
+    <div class="modal fade" id="modalInfo" tabindex="1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header text-warning">
+                    Bienvenido/a al Día de los Muertos: Calaveritas, flores de cempasúchil y mucha tradición
+                </div>
+                <div class="modal-body py-4 text-primary opacity-25">
+                    El día de los muertos no es tristeza: es memoria, colores y cariño eterno. Gracias por visitar este
+                    espacio para honrar a quienes viven en tu corazón
+                </div>
+                <div class="modal-footer align-items-end">
+                    <button class="btn btn-primary" type="button">Aceptar</button>
+                    <button class="btn btn-danger" type="button">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección registro -->
+    <section class="container py-4 bg-body-secondary ">
+        <form action="#" method="POST" class="d-flex justify-content-around">
+            <h1 class="text-body-secondary">Registro</h1>
+            <div class="mb-3">
+                <input type="email" class="form-control" id="email" placeholder="Teclea email">
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" id="password" placeholder="Teclea contraseña">
+            </div>
+            <button type="submit" class="btn btn-primary">Confirmar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="d-flex justify-content-around mt-4 bg-warning py-2">
+
+        <button class="btn btn-primary">Notificaciones 
+            <span class="badge bg-white text-dark rounded-pill">4</span>
+        </button>
+
+        <button class="btn btn-danger opacity-75" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
+            aria-expanded="false" aria-controls="collapseWidthExample">Framework utilizado</button>
+
+        <div>
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                <div class="card card-body">
+                    Bootstrap 5
+                </div>
+            </div>
+        </div>
+
+        <div class="py-2">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter-x"></i>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
