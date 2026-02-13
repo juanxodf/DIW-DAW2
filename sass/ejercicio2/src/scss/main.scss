@@ -1,0 +1,31 @@
+// @warn "Salida: #{map-get($botones,secondary)}";
+
+$social-colors: (
+  facebook: #3b5998,
+  twitter: #1da1f2,
+  instagram: #e1306c,
+  linkedin: #0077b5
+);
+
+$botones: (
+  primary: #007bff,
+  secondary: #6c757d,
+  success: #28a745,
+  danger: #dc3545
+);
+
+.btn-facebook {
+  background-color: map-get($social-colors, facebook);
+}
+
+.btn-twitter {
+  background-color: map-get($social-colors, twitter);
+}
+
+.btn-instagram {
+  background-color: map-get($social-colors, instagram);
+}
+
+.btn-linkedin {
+  background-color: map-get($social-colors, linkedin);
+}
