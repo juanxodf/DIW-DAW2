@@ -14,4 +14,19 @@
   background-color: #0077b5;
 }
 
+.btn--small {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+.btn--medium {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.btn--large {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+}
+
 /*# sourceMappingURL=style.css.map */
