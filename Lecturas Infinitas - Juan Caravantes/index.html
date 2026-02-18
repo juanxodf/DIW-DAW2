@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Lecturas Infinitas</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container py-3">
+            <div class="d-flex align-items-center justify-content-between">
+                <h1 class="h3 mb-0 text-primary">Lecturas Infinitas</h1>
+                <div class="d-flex align-items-center">
+                    <span class="me-2 text-muted small d-none d-sm-inline">Librería independiente</span>
+                    <i class="bi bi-book-fill text-primary fs-2" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Abrir menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <form class="d-flex my-2 my-lg-0 me-lg-3" role="search">
+                    <label class="visually-hidden" for="searchInput">Buscar</label>
+                    <input id="searchInput" class="form-control me-2" type="search" placeholder="Buscar libro..." aria-label="Buscar libro">
+                    <button class="btn btn-primary" type="submit" aria-label="Buscar">
+                        <i class="bi bi-search" aria-hidden="true"></i>
+                    </button>
+                </form>
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#novedades">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventos.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Comprar online</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main>
+        
+        <!-- Hero -->
+        <section class="hero-section text-white text-center py-5">
+            <div class="container">
+                <h2 class="display-4 fw-bold mb-3">Bienvenido a Lecturas Infinitas</h2>
+                <p class="lead mb-4">Somos una librería independiente: recomendaciones de verdad, novedades cuidadas y actividades para leer en compañía.</p>
+                <a href="catalogo.html" class="btn btn-light btn-lg">Explorar catálogo</a>
+            </div>
+        </section>
+
+        <!-- Presentación -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h3 class="h2 mb-3">Nuestra historia</h3>
+                        <p>Lecturas Infinitas nace en 1995 con la misión de acercar la cultura y el conocimiento a todos los lectores. Durante más de 25 años hemos sido un punto de encuentro para amantes de la literatura, ofreciendo un catálogo cuidadosamente seleccionado y actividades culturales que enriquecen nuestra comunidad.</p>
+                        <p>Creemos que cada libro abre una puerta a un mundo nuevo, y queremos acompañarte en ese viaje.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/hero-bg.jpeg" alt="Interior de Lecturas Infinitas" class="img-fluid rounded shadow-soft">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Catálogo por géneros -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <h3 class="h2 text-center mb-4">Explora por género</h3>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 text-center card-hover">
+                            <div class="card-body">
+                                <i class="bi bi-journal-text text-primary fs-1 mb-3"></i>
+                                <h4 class="card-title h5">Novela</h4>
+                                <p class="card-text">Ficción contemporánea, clásicos y narrativa que emociona.</p>
+                                <a href="catalogo.html" class="btn btn-outline-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 text-center card-hover">
+                            <div class="card-body">
+                                <i class="bi bi-lightbulb text-primary fs-1 mb-3"></i>
+                                <h4 class="card-title h5">Ensayo</h4>
+                                <p class="card-text">Pensamiento, filosofía y análisis de la realidad.</p>
+                                <a href="catalogo.html" class="btn btn-outline-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 text-center card-hover">
+                            <div class="card-body">
+                                <i class="bi bi-star text-primary fs-1 mb-3"></i>
+                                <h4 class="card-title h5">Infantil</h4>
+                                <p class="card-text">Cuentos y aventuras para los más pequeños.</p>
+                                <a href="catalogo.html" class="btn btn-outline-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 text-center card-hover">
+                            <div class="card-body">
+                                <i class="bi bi-palette text-primary fs-1 mb-3"></i>
+                                <h4 class="card-title h5">Cómic</h4>
+                                <p class="card-text">Novela gráfica, manga y cómics de autor.</p>
+                                <a href="catalogo.html" class="btn btn-outline-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Novedades -->
+        <section class="py-5" id="novedades">
+            <div class="container">
+                <h3 class="h2 text-center mb-4">Novedades destacadas</h3>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-soft">
+                            <img src="img/libro-1.jpg" class="card-img-top" alt="Portada del libro El viento conoce mi nombre">
+                            <div class="card-body">
+                                <span class="badge bg-success mb-2">Novedad</span>
+                                <h4 class="card-title h5">El viento conoce mi nombre</h4>
+                                <p class="text-muted small">Isabel Allende</p>
+                                <p class="card-text">Una emotiva historia sobre la separación, el exilio y la búsqueda de identidad.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold text-primary">18,90 €</span>
+                                    <a href="ficha.html" class="btn btn-sm btn-primary">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-soft">
+                            <img src="img/libro-2.jpg" class="card-img-top" alt="Portada del libro Sapiens">
+                            <div class="card-body">
+                                <span class="badge bg-success mb-2">Novedad</span>
+                                <h4 class="card-title h5">Sapiens</h4>
+                                <p class="text-muted small">Yuval Noah Harari</p>
+                                <p class="card-text">De animales a dioses: una breve historia de la humanidad.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold text-primary">22,90 €</span>
+                                    <a href="ficha.html" class="btn btn-sm btn-primary">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-soft">
+                            <img src="img/libro-3.jpg" class="card-img-top" alt="Portada del libro El principito">
+                            <div class="card-body">
+                                <span class="badge bg-success mb-2">Novedad</span>
+                                <h4 class="card-title h5">El principito (Ed. ilustrada)</h4>
+                                <p class="text-muted small">Antoine de Saint-Exupéry</p>
+                                <p class="card-text">Edición especial del clásico más querido de todos los tiempos.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold text-primary">16,50 €</span>
+                                    <a href="ficha.html" class="btn btn-sm btn-primary">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Eventos destacados -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <h3 class="h2 text-center mb-4">Próximos eventos</h3>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card card-hover">
+                            <div class="card-body">
+                                <span class="badge bg-info mb-2">Presentación</span>
+                                <h4 class="card-title h5">Encuentro con Laura Gallego</h4>
+                                <p class="card-text">La autora presentará su nueva novela juvenil y firmará ejemplares.</p>
+                                <p class="mb-1"><i class="bi bi-calendar3 me-2"></i>15 de marzo, 18:30h</p>
+                                <p class="mb-3"><i class="bi bi-geo-alt me-2"></i>Sala principal</p>
+                                <a href="eventos.html" class="btn btn-sm btn-primary">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card card-hover">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Club de lectura</span>
+                                <h4 class="card-title h5">Club de lectura: Cien años de soledad</h4>
+                                <p class="card-text">Tertúlia mensual sobre la obra maestra de García Márquez.</p>
+                                <p class="mb-1"><i class="bi bi-calendar3 me-2"></i>20 de marzo, 19:00h</p>
+                                <p class="mb-3"><i class="bi bi-geo-alt me-2"></i>Sala de actividades</p>
+                                <a href="eventos.html" class="btn btn-sm btn-primary">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="eventos.html" class="btn btn-outline-primary">Ver todos los eventos</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Lecturas Infinitas</h5>
+                    <p>Tu librería de confianza desde 1995. Acercando la cultura a todos los lectores.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Enlaces útiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="catalogo.html" class="text-white-50 text-decoration-none">Catálogo</a></li>
+                        <li><a href="eventos.html" class="text-white-50 text-decoration-none">Eventos</a></li>
+                        <li><a href="registro.html" class="text-white-50 text-decoration-none">Registro</a></li>
+                        <li><a href="contacto.html" class="text-white-50 text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none">Política de cookies</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Protección de datos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2026 Lecturas Infinitas. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Creado por: Caravantes, Juan</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Lecturas Infinitas</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container py-3">
+            <div class="d-flex align-items-center justify-content-between">
+                <h1 class="h3 mb-0 text-primary">Lecturas Infinitas</h1>
+                <div class="d-flex align-items-center">
+                    <span class="me-2 text-muted small d-none d-sm-inline">Librería independiente</span>
+                    <i class="bi bi-book-fill text-primary fs-2" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#novedades">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="eventos.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Comprar online</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar libro..." aria-label="Buscar">
+                    <button class="btn btn-primary" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main>
+        
+        <!-- Banner de eventos -->
+        <section class="eventos-banner text-white text-center py-5">
+            <div class="container">
+                <h2 class="display-5 fw-bold mb-3">Agenda cultural</h2>
+                <p class="lead">Presentaciones, talleres, clubes de lectura y mucho más. Únete a nuestra comunidad de lectores.</p>
+            </div>
+        </section>
+
+        <div class="container my-5">
+            
+            <p class="text-center mb-5">Lecturas Infinitas es más que una librería: es un espacio de encuentro donde compartir el amor por la lectura. Consulta nuestros próximos eventos y reserva tu plaza.</p>
+
+            <!-- Eventos -->
+            <div class="row g-4">
+                
+                <!-- Evento 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-soft">
+                        <img src="img/evento-1.jpg" class="card-img-top" alt="Presentación de Laura Gallego">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-info mb-2 align-self-start">Presentación</span>
+                            <h5 class="card-title">Encuentro con Laura Gallego</h5>
+                            <p class="card-text flex-grow-1">La autora presentará su nueva novela juvenil y firmará ejemplares. Un encuentro imprescindible para sus seguidores.</p>
+                            <p class="mb-1"><i class="bi bi-calendar3 text-primary me-2"></i><strong>15 de marzo, 18:30h</strong></p>
+                            <p class="mb-3"><i class="bi bi-geo-alt text-primary me-2"></i>Sala principal · <a href="#">Ver mapa</a></p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEvento1">Reservar plaza</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Evento 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-soft">
+                        <img src="img/evento-2.jpg" class="card-img-top" alt="Club de lectura">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-warning text-dark mb-2 align-self-start">Club de lectura</span>
+                            <h5 class="card-title">Club: Cien años de soledad</h5>
+                            <p class="card-text flex-grow-1">Tertulia mensual sobre la obra maestra de García Márquez. Abierto a todos los niveles.</p>
+                            <p class="mb-1"><i class="bi bi-calendar3 text-primary me-2"></i><strong>20 de marzo, 19:00h</strong></p>
+                            <p class="mb-3"><i class="bi bi-geo-alt text-primary me-2"></i>Sala de actividades · <a href="#">Ver mapa</a></p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEvento2">Reservar plaza</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Evento 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-soft">
+                        <img src="img/evento-3.jpg" class="card-img-top" alt="Taller de escritura">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-success mb-2 align-self-start">Taller</span>
+                            <h5 class="card-title">Taller de escritura creativa</h5>
+                            <p class="card-text flex-grow-1">Aprende técnicas narrativas con el escritor Carlos Fernández. Plazas limitadas.</p>
+                            <p class="mb-1"><i class="bi bi-calendar3 text-primary me-2"></i><strong>25 de marzo, 17:00h</strong></p>
+                            <p class="mb-3"><i class="bi bi-geo-alt text-primary me-2"></i>Sala de talleres · <a href="#">Ver mapa</a></p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEvento3">Reservar plaza</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Evento 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-soft">
+                        <img src="img/evento-4.jpg" class="card-img-top" alt="Cuentacuentos">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-danger mb-2 align-self-start">Infantil</span>
+                            <h5 class="card-title">Cuentacuentos: Viaje al país de los libros</h5>
+                            <p class="card-text flex-grow-1">Actividad para niños de 4 a 8 años. Historias mágicas narradas de forma teatralizada.</p>
+                            <p class="mb-1"><i class="bi bi-calendar3 text-primary me-2"></i><strong>30 de marzo, 11:00h</strong></p>
+                            <p class="mb-3"><i class="bi bi-geo-alt text-primary me-2"></i>Zona infantil · <a href="#">Ver mapa</a></p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEvento4">Reservar plaza</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Evento 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-soft">
+                        <img src="img/evento-5.jpg" class="card-img-top" alt="Charla sobre poesía">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-secondary mb-2 align-self-start">Charla</span>
+                            <h5 class="card-title">Poesía en tiempos modernos</h5>
+                            <p class="card-text flex-grow-1">Mesa redonda con poetas contemporáneos sobre el papel de la poesía hoy.</p>
+                            <p class="mb-1"><i class="bi bi-calendar3 text-primary me-2"></i><strong>5 de abril, 20:00h</strong></p>
+                            <p class="mb-3"><i class="bi bi-geo-alt text-primary me-2"></i>Sala principal · <a href="#">Ver mapa</a></p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEvento5">Reservar plaza</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Evento 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-soft">
+                        <img src="img/evento-6.jpg" class="card-img-top" alt="Encuentro con ilustradora">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-info mb-2 align-self-start">Presentación</span>
+                            <h5 class="card-title">Ilustración y narrativa con Ana Sánchez</h5>
+                            <p class="card-text flex-grow-1">La ilustradora nos muestra su proceso creativo y presenta su nuevo álbum ilustrado.</p>
+                            <p class="mb-1"><i class="bi bi-calendar3 text-primary me-2"></i><strong>10 de abril, 18:00h</strong></p>
+                            <p class="mb-3"><i class="bi bi-geo-alt text-primary me-2"></i>Sala de actividades · <a href="#">Ver mapa</a></p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEvento6">Reservar plaza</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal ejemplo (evento 1) -->
+    <div class="modal fade" id="modalEvento1" tabindex="-1" aria-labelledby="modalEvento1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalEvento1Label">Encuentro con Laura Gallego</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Fecha:</strong> 15 de marzo, 18:30h</p>
+                    <p><strong>Ubicación:</strong> Sala principal</p>
+                    <p><strong>Aforo:</strong> 50 personas</p>
+                    <p>La reconocida autora de literatura juvenil Laura Gallego nos visitará para presentar su nueva obra. Habrá turno de preguntas y firma de ejemplares.</p>
+                    <p class="mb-0"><em>Entrada gratuita con inscripción previa.</em></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Confirmar reserva</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Repetir modales para resto de eventos (mismo patrón) -->
+    <div class="modal fade" id="modalEvento2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Club de lectura: Cien años de soledad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Fecha:</strong> 20 de marzo, 19:00h</p>
+                    <p><strong>Ubicación:</strong> Sala de actividades</p>
+                    <p>Tertulia sobre la obra de García Márquez. Se recomienda haber leído al menos la mitad del libro.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Confirmar reserva</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalEvento3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Taller de escritura creativa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Fecha:</strong> 25 de marzo, 17:00h</p>
+                    <p><strong>Ubicación:</strong> Sala de talleres</p>
+                    <p>Plazas limitadas (máximo 15 personas). Precio: 12€ por sesión.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Confirmar reserva</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalEvento4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cuentacuentos infantil</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Fecha:</strong> 30 de marzo, 11:00h</p>
+                    <p><strong>Ubicación:</strong> Zona infantil</p>
+                    <p>Actividad gratuita para niños de 4 a 8 años. Los padres pueden acompañar.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Confirmar reserva</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalEvento5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Charla: Poesía en tiempos modernos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Fecha:</strong> 5 de abril, 20:00h</p>
+                    <p><strong>Ubicación:</strong> Sala principal</p>
+                    <p>Mesa redonda con tres poetas contemporáneos españoles.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Confirmar reserva</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalEvento6" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ilustración y narrativa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Fecha:</strong> 10 de abril, 18:00h</p>
+                    <p><strong>Ubicación:</strong> Sala de actividades</p>
+                    <p>Ana Sánchez mostrará su proceso creativo y presentará su nuevo álbum ilustrado.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Confirmar reserva</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Lecturas Infinitas</h5>
+                    <p>Tu librería de confianza desde 1995. Acercando la cultura a todos los lectores.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Enlaces útiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="catalogo.html" class="text-white-50 text-decoration-none">Catálogo</a></li>
+                        <li><a href="eventos.html" class="text-white-50 text-decoration-none">Eventos</a></li>
+                        <li><a href="registro.html" class="text-white-50 text-decoration-none">Registro</a></li>
+                        <li><a href="contacto.html" class="text-white-50 text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none">Política de cookies</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Protección de datos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2024 Lecturas Infinitas. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Creado por: García López, María</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

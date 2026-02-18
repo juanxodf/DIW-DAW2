@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Lecturas Infinitas</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container py-3">
+            <div class="d-flex align-items-center justify-content-between">
+                <h1 class="h3 mb-0 text-primary">Lecturas Infinitas</h1>
+                <div class="d-flex align-items-center">
+                    <span class="me-2 text-muted small d-none d-sm-inline">Librería independiente</span>
+                    <i class="bi bi-book-fill text-primary fs-2" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#novedades">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventos.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Comprar online</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar libro..." aria-label="Buscar">
+                    <button class="btn btn-primary" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main>
+        <div class="container my-5">
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    
+                    <h2 class="text-center mb-4">Crea tu cuenta</h2>
+                    
+                    <div class="row g-4">
+                        
+                        <!-- Formulario de registro -->
+                        <div class="col-md-7">
+                            <div class="card shadow-soft">
+                                <div class="card-body p-4">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="nombre" class="form-label">Nombre completo</label>
+                                            <input type="text" class="form-control" id="nombre" placeholder="Ej: María García López" required>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Correo electrónico</label>
+                                            <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="password" class="form-label">Contraseña</label>
+                                            <input type="password" class="form-control" id="password" placeholder="Mínimo 8 caracteres" required minlength="8">
+                                            <div class="form-text">Debe contener al menos 8 caracteres.</div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="password2" class="form-label">Confirmar contraseña</label>
+                                            <input type="password" class="form-control" id="password2" placeholder="Repite tu contraseña" required>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="telefono" class="form-label">Teléfono (opcional)</label>
+                                            <input type="tel" class="form-control" id="telefono" placeholder="+34 600 123 456">
+                                        </div>
+
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="newsletter">
+                                            <label class="form-check-label" for="newsletter">
+                                                Quiero recibir información sobre novedades y eventos
+                                            </label>
+                                        </div>
+
+                                        <div class="mb-4 form-check">
+                                            <input type="checkbox" class="form-check-input" id="condiciones" required>
+                                            <label class="form-check-label" for="condiciones">
+                                                Acepto las <a href="#">condiciones de uso</a> y la <a href="#">política de privacidad</a>
+                                            </label>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary w-100 mb-3">Crear cuenta</button>
+                                        
+                                        <p class="text-center mb-0">¿Ya tienes cuenta? <a href="#" class="text-decoration-none">Inicia sesión aquí</a></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ventajas de registrarse -->
+                        <div class="col-md-5">
+                            <div class="card bg-light h-100">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title mb-4">¿Por qué registrarse?</h5>
+                                    
+                                    <div class="mb-3">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                        <strong>Compra más rápida</strong>
+                                        <p class="ms-4 mb-0 text-muted">Guarda tus datos de envío y pago para futuras compras.</p>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                        <strong>Historial de pedidos</strong>
+                                        <p class="ms-4 mb-0 text-muted">Consulta tus compras anteriores en cualquier momento.</p>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                        <strong>Ofertas exclusivas</strong>
+                                        <p class="ms-4 mb-0 text-muted">Recibe descuentos especiales solo para clientes registrados.</p>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                        <strong>Reserva de eventos</strong>
+                                        <p class="ms-4 mb-0 text-muted">Inscríbete antes en nuestras actividades culturales.</p>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                        <strong>Recomendaciones personalizadas</strong>
+                                        <p class="ms-4 mb-0 text-muted">Descubre libros según tus gustos e intereses.</p>
+                                    </div>
+
+                                    <hr class="my-4">
+
+                                    <p class="small text-muted mb-0">
+                                        <i class="bi bi-shield-check text-primary me-2"></i>
+                                        Tus datos están protegidos y nunca serán compartidos con terceros.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Lecturas Infinitas</h5>
+                    <p>Tu librería de confianza desde 1995. Acercando la cultura a todos los lectores.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Enlaces útiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="catalogo.html" class="text-white-50 text-decoration-none">Catálogo</a></li>
+                        <li><a href="eventos.html" class="text-white-50 text-decoration-none">Eventos</a></li>
+                        <li><a href="registro.html" class="text-white-50 text-decoration-none">Registro</a></li>
+                        <li><a href="contacto.html" class="text-white-50 text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none">Política de cookies</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Protección de datos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2024 Lecturas Infinitas. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Creado por: García López, María</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
