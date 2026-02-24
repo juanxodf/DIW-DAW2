@@ -1,0 +1,48 @@
+.card{
+    padding: auto;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card-primary{
+    @extend .card;
+    background-color: #007bff;
+}
+
+.card-secondary{
+    @extend .card;
+    background-color: #6c757d;
+}
+
+@function calculate-padding($size) {
+    @if $size == 'small' {
+        @return 10px;
+    } @else if $size == 'medium' {
+        @return 20px;
+    } @else if $size == 'large' {
+        @return 30px;
+    } @else {
+        @return 15px; 
+    }
+}
+
+.card-small {
+    padding: calculate-padding('small');
+}
+
+@function random-color(){
+    $color-a: #ff0000;
+    $color-b: #00ff00;
+    $color-c: #0000ff;
+    $color-d: #ffff00;
+    $select: random(4);
+    @if $select == 1 {
+        @return $color-a;
+    } @else if $select == 2 {
+        @return $color-b;
+    } @else if $select == 3 {
+        @return $color-c;
+    } @else {
+        @return $color-d;
+    }
+}

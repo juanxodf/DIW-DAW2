@@ -1,0 +1,80 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin box($width, $height, $color) {
+  width: $width;
+  height: $height;
+  background-color: $color;
+}
+
+@mixin padding {
+    padding: 20px;
+}
+
+@mixin button($bg:blue, $color:white, $padding:10px) {
+    background-color: $bg;
+    color: $color;
+    padding: $padding;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+@mixin theme ($mode){
+    @if $mode == dark{
+        background-color: #333;
+        color: #fff;
+    } @else if $mode == light {
+        background-color: #fff;
+        color: #333;
+    }
+}
+
+@mixin box-shadow($color, $x: 0px, $y: 0px, $blur: 5px) {
+    box-shadow: $x $y $blur $color;
+    @include padding;
+}
+
+@mixin generate-spacing($size) {
+    @for $i from 1 through $size {
+        .m-#{$i} {
+            margin: $i * 5px;
+        }
+        .p-#{$i} {
+            padding: $i * 5px;
+        }
+    }   
+}
+
+.card{
+    @include flex-center;
+}
+
+.box{
+    padding-left: 3px;
+    @include flex-center;
+    @include box(200px, 200px, #3498db);
+}
+
+.buton{
+    @include button($bg: #e74c3c, $color: white, $padding: 15px);
+}
+
+.boton{
+    @include button
+}
+
+.ligth-mode{
+    @include theme(light);
+}
+
+.dark-mode{
+    @include theme(dark);
+}
+
+.shadow{
+    @include box-shadow(rgba(0, 0, 0, 0.5), 5px, 5px, 10px);
+}
