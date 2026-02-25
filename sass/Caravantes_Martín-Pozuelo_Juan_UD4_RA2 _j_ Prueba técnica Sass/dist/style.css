@@ -1,0 +1,65 @@
+table {
+  border-collapse: collapse;
+}
+table th, table td {
+  border: solid black 1px;
+  padding: 1rem;
+  background-color: column-color(nth-child(1));
+  background-color: column-color(nth-child(2));
+  background-color: column-color(nth-child(3));
+  background-color: column-color(nth-child(4));
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  text-align: center;
+  text-decoration: none;
+}
+.btn:hover {
+  box-shadow: #888;
+}
+.btn:active {
+  background-color: orange;
+  color: white;
+}
+.btn-error {
+  background-color: #FF0000;
+}
+.btn-warning {
+  background-color: rgb(239, 241, 120);
+}
+.btn-accepted {
+  background-color: rgb(55, 138, 0);
+}
+.btn-normal {
+  background-color: rgb(0, 110, 255);
+}
+
+ul .tag-success {
+  background-color: rgb(144, 238, 144);
+}
+ul .tag-warning {
+  background-color: rgb(255, 255, 0);
+}
+ul .tag-danger {
+  background-color: rgb(255, 143, 143);
+}
+ul .tag-info {
+  background-color: rgb(173, 216, 230);
+}
+ul .tag-default {
+  background-color: rgb(128, 128, 128);
+}
+ul li {
+  padding: 8px 12px;
+  list-style: none;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: fit-content;
+  margin: 5px 0;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,101 @@
+@use "variables" as variable;
+
+// --------------------------
+// Estilos generales de tabla
+// --------------------------
+table {
+    border-collapse: collapse;
+    th,td{
+        border: solid black 1px;
+        padding: 1rem;
+        @for $i from 1 through 4 {
+            background-color: column-color(nth-child(#{$i}));
+        }
+    }
+}
+
+// ---------------------------------
+// Colorear columnas automáticamente
+// ---------------------------------
+@function column-color($n){
+    @if $n % 2 == 0 {
+        @return #CCCCCC;
+    } 
+    @else{
+        @return #888888;
+    }
+}
+
+// ------------------
+// Sistema de botones
+// ------------------
+.btn{
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: variable.$border-radius;
+    text-align: center;
+    text-decoration: none;
+    &:hover{
+        box-shadow: variable.$shadow;
+        
+    }
+    &:active{
+            background-color: orange;
+            color: white;
+    }
+
+    &-error{
+        background-color: variable.$error;
+    }
+    &-warning{
+        background-color: variable.$warning;
+    }
+    &-accepted{
+        background-color: variable.$accepted;
+    }
+    &-normal{
+        background-color: variable.$normal;
+    }
+}
+
+// -----------------
+// Lista de estados
+// -----------------
+$bgcolor: (
+    success:(
+        background-color: rgb(144, 238, 144)
+    ),
+    warning:(
+        background-color: rgb(255, 255, 0)
+    ),
+    danger:(
+        background-color:rgb(255, 143, 143)
+    ),
+    info:(
+        background-color:rgb(173, 216, 230)
+    ),
+    default:(
+        background-color: rgb(128, 128, 128)
+    )
+);
+
+@mixin tag-style{
+    padding: 8px 12px;
+    list-style: none;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: fit-content;
+    margin: 5px 0;
+}
+
+ul{
+    @each $clase in success,warning,danger,info,default{
+        .tag-#{$clase} {
+            background-color: map-get(map-get($map: $bgcolor, $key: $clase),background-color);
+        }
+    };
+    li{
+        @include tag-style;
+    }
+}
